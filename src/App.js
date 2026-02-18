@@ -1,23 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./Compounent/Header";
+import SideMenu from "./Compounent/SideMenu";
+import Content from "./Compounent/Content";
+import "./App.css";
 
 function App() {
+  const appStyle = {
+    display: "flex",
+    flexDirection: "column",
+    height: "100vh",
+    margin: 0,
+    padding: 0,
+    boxSizing: "border-box",
+  };
+
+  const mainStyle = {
+    display: "flex",
+    flex: 1,
+    backgroundColor: "#f0f0f0",
+  };
+
+  const headerWrapperStyle = {
+    backgroundColor: "#4fb68b",
+    zIndex: 1000,
+  };
+
+  const sideMenuWrapperStyle = {
+    backgroundColor: "#e0f7f4",
+    flexShrink: 0,
+    width: "240px",
+    height: "calc(100vh - 120px)",
+    marginTop: "120px",
+    overflowY: "auto",
+  };
+
+  const contentWrapperStyle = {
+    flex: 1,
+    flexGrow: 1,
+    backgroundColor: "#ffffff",
+    padding: "20px",
+    overflowY: "auto",
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={appStyle}>
+      <div style={headerWrapperStyle}>
+        <Header />
+      </div>
+      <div style={mainStyle}>
+        <div style={contentWrapperStyle}>
+          <Content />
+        </div>
+        <div style={sideMenuWrapperStyle}>
+          <SideMenu />
+        </div>
+      </div>
     </div>
   );
 }
