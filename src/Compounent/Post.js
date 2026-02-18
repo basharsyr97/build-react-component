@@ -1,6 +1,4 @@
-
-
-export default function Post({ title, content, author }) {
+export default function Post({ title, author, children }) {
   const postStyle = {
     border: "2px solid #4fb68b",
     borderRadius: "10px",
@@ -29,9 +27,8 @@ export default function Post({ title, content, author }) {
   return (
     <div style={postStyle}>
       <h2 style={titleStyle}>{title}</h2>
-      <p style={contentStyle}>{content}</p>
+      <div style={contentStyle}>{children}</div>{" "}
       <div style={authorStyle}>Written by: {author}</div>
     </div>
   );
 }
-

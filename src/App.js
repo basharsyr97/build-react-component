@@ -22,6 +22,7 @@ function App() {
   const headerWrapperStyle = {
     backgroundColor: "#4fb68b",
     zIndex: 1000,
+    boxShadow: "0 4px 12px 12px rgba(130, 94, 94, 0.6)",
   };
 
   const sideMenuWrapperStyle = {
@@ -37,7 +38,7 @@ function App() {
     flex: 1,
     flexGrow: 1,
     backgroundColor: "#ffffff",
-    padding: "20px",
+    padding: "40px",
     overflowY: "auto",
   };
 

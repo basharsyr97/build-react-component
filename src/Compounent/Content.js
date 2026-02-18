@@ -12,23 +12,35 @@ export default function Content() {
 
   return (
     <div style={contentStyle}>
-      <Post
-        title="Getting Started with React"
-        content="React makes it easier to build interactive user interfaces by breaking the UI into reusable components. Understanding props and state is the first big step toward mastering React."
-        author="Bashar"
-      />
+      <Post title="Getting Started with React" author="Bashar">
+        <p>
+          React makes it easier to build interactive user interfaces by breaking
+          the UI into reusable components.
+        </p>
+        <p>
+          Understanding props and state is the first big step toward mastering React.
+        </p>
+      </Post>
 
-      <Post
-        title="Why TypeScript Matters"
-        content="TypeScript adds static typing to JavaScript, helping developers catch errors early and write more maintainable code. In larger projects, it significantly improves scalability and developer experience."
-        author="Sara"
-      />
 
-      <Post
-        title="Modern Web Development"
-        content="Modern web applications rely on component-based architecture, client-side routing, and efficient data fetching strategies. Tools like React and Next.js simplify complex frontend challenges."
-        author="Ahmed"
-      />
+
+      <Post title="Why TypeScript Matters" author="Sara">
+        <p>
+          TypeScript adds static typing to JavaScript, helping developers catch errors early.
+        </p>
+        <p>
+          In larger projects, it significantly improves scalability and developer experience.
+        </p>
+      </Post>
+
+      <Post title="Modern Web Development" author="Ahmed">
+        <p>
+          Modern web applications rely on component-based architecture and client-side routing.
+        </p>
+        <p>
+          Tools like React and Next.js simplify complex frontend challenges.
+        </p>
+      </Post>
     </div>
   );
 }
