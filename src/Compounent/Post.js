@@ -3,6 +3,7 @@ export default function Post({ title, author, children }) {
     border: "2px solid #4fb68b",
     borderRadius: "10px",
     padding: "20px",
+    width: "80%",
     margin: "20px",
     boxShadow: "0 4px 10px rgba(0,0,0,0.1)",
     backgroundColor: "#ffffff",

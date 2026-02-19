@@ -15,8 +15,10 @@ function App() {
 
   const mainStyle = {
     display: "flex",
-    flex: 1,
+    flex: 3 ,
     backgroundColor: "#f0f0f0",
+    gap: "70px",
+    justifyContent: "space-between",
   };
 
   const headerWrapperStyle = {
@@ -29,9 +31,9 @@ function App() {
     backgroundColor: "#e0f7f4",
     flexShrink: 0,
     width: "240px",
-    height: "calc(100vh - 120px)",
-    marginTop: "120px",
-    overflowY: "auto",
+    // height: "calc(100vh - 120px)",
+    // marginTop: "120px",
+    // overflowY: "auto",
   };
 
   const contentWrapperStyle = {

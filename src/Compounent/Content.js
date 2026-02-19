@@ -5,42 +5,72 @@ export default function Content() {
     marginLeft: "240px",
     marginTop: "120px",
     padding: "20px",
+    width: "70%",
+    alignItems: "center",
     display: "flex",
     flexDirection: "column",
     gap: "20px",
   };
 
-  return (
-    <div style={contentStyle}>
-      <Post title="Getting Started with React" author="Bashar">
-        <p>
-          React makes it easier to build interactive user interfaces by breaking
-          the UI into reusable components.
-        </p>
-        <p>
-          Understanding props and state is the first big step toward mastering React.
-        </p>
+  const posts = [
+    {
+      id: 1,
+      title: "Getting Started with React with rendering",
+      author: "Bashar",
+      child: (
+        <>
+          <p>
+            React makes it easier to build interactive user interfaces by
+            breaking the UI into reusable components.
+          </p>
+          <p>
+            Understanding props and state is the first big step toward mastering
+            React.
+          </p>
+        </>
+      ),
+    },
+    {
+      id: 1,
+      title: "Why TypeScript Matters",
+      author: "Sara",
+      child: (
+        <>
+          <p>
+            TypeScript adds static typing to JavaScript, helping developers
+            catch errors early.
+          </p>
+          <p>
+            In larger projects, it significantly improves scalability and
+            developer experience.
+          </p>
+        </>
+      ),
+    },
+    {
+      id: 1,
+      title: "Modern Web Development",
+      author: "mohammed",
+      child: (
+        <>
+          <p>
+            Modern web applications rely on component-based architecture and
+            client-side routing.
+          </p>
+          <p>
+            Tools like React and Next.js simplify complex frontend challenges.
+          </p>
+        </>
+      ),
+    },
+  ];
+
+  const postsMaped = posts.map((post) => {
+    return (
+      <Post key={post.id} title={post.title} author={post.author}>
+        {post.child}
       </Post>
-
-
-
-      <Post title="Why TypeScript Matters" author="Sara">
-        <p>
-          TypeScript adds static typing to JavaScript, helping developers catch errors early.
-        </p>
-        <p>
-          In larger projects, it significantly improves scalability and developer experience.
-        </p>
-      </Post>
-
-      <Post title="Modern Web Development" author="Ahmed">
-        <p>
-          Modern web applications rely on component-based architecture and client-side routing.
-        </p>
-        <p>
-          Tools like React and Next.js simplify complex frontend challenges.
-        </p>
-      </Post>
-    </div>
-  );
+    );
+  });
+  return <div style={contentStyle}>{postsMaped}</div>;
 }

@@ -1,11 +1,11 @@
 export default function SideMenu() {
   const sideMenuStyle = {
-    position: "fixed",
-    zIndex: 1,
-    top: "220px",
-    right: 0,
-    width: "220px",
-    height: "calc(100vh - 220px)",
+    // position: "fixed",
+    // zIndex: 1,
+    // top: "220px",
+    // right: 0,
+    // width: "220px",
+    // height: "calc(100vh - 220px)",
     overflowY: "auto",
     border: "3px  solid #3d8f6d",
     padding: "20px",
