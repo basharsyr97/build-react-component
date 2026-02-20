@@ -1,3 +1,5 @@
+import Button from "./Buttun";
+
 export default function SideMenu() {
   const sideMenuStyle = {
     // position: "fixed",
@@ -15,128 +17,17 @@ export default function SideMenu() {
     backgroundColor: "#f9f9f9",
   };
 
-  const buttonStyle = {
-    backgroundColor: "#ff4d4d",
-    color: "#fff",
-    width: "70%",
-    border: "4px solid rgb(163, 49, 49)",
-    alignSelf: "center",
-    padding: "10px",
-    borderRadius: "10px",
-    cursor: "pointer",
-    boxShadow: "0 4px 8px rgba(0,0,0,0.2)",
-    transition: "0.3s",
-  };
-
-  const handleMouseEnter = (e) => {
-    e.target.style.backgroundColor = "#cc0000";
-  };
-
-  const handleMouseLeave = (e) => {
-    e.target.style.backgroundColor = "#ff4d4d";
-    // alert("Button clicked!");
-  };
-
   return (
     <div style={sideMenuStyle}>
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 1
-      </button>
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 2
-      </button>
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>{" "}
-      <button
-        style={buttonStyle}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        Button 3
-      </button>
+      <Button>Button 1</Button>
+      <Button>Button 2</Button>
+      <Button>Button 3</Button>
+      <Button>Button 4</Button>
+      <Button>Button 5</Button>
+      <Button>Button 6</Button>
+      <Button>Button 7</Button>
+      <Button>Button 8</Button>
+      <Button>Button 9</Button>
     </div>
   );
 }

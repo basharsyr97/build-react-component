@@ -31,7 +31,7 @@ export default function Content() {
       ),
     },
     {
-      id: 1,
+      id: 2,
       title: "Why TypeScript Matters",
       author: "Sara",
       child: (
@@ -48,7 +48,7 @@ export default function Content() {
       ),
     },
     {
-      id: 1,
+      id: 3,
       title: "Modern Web Development",
       author: "mohammed",
       child: (

@@ -2,6 +2,7 @@ import Header from "./Compounent/Header";
 import SideMenu from "./Compounent/SideMenu";
 import Content from "./Compounent/Content";
 import "./App.css";
+import Form from "./Compounent/Form";
 
 function App() {
   const appStyle = {
@@ -15,7 +16,7 @@ function App() {
 
   const mainStyle = {
     display: "flex",
-    flex: 3 ,
+    flex: 3,
     backgroundColor: "#f0f0f0",
     gap: "70px",
     justifyContent: "space-between",
@@ -51,8 +52,11 @@ function App() {
       </div>
       <div style={mainStyle}>
         <div style={contentWrapperStyle}>
-          <Content />
+          <Form />
         </div>
+        {/* <div style={contentWrapperStyle}>
+          <Content />
+        </div> */}
         <div style={sideMenuWrapperStyle}>
           <SideMenu />
         </div>
