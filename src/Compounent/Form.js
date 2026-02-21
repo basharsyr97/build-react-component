@@ -1,12 +1,17 @@
 import React, { useState } from 'react';
 
 export default function Form() {
-    const [email, setEmail] = useState('');
-    const [password, setPassword] = useState('');
+    // const [email, setEmail] = useState('');
+    // const [password, setPassword] = useState('');
+
+    const [formData,setFormData] = useState({
+        email: "",
+        password: "",
+    });
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Login attempt:', { email, password });
+        console.log('Login attempt:', formData);
         // Add your login logic here
     };
 
@@ -17,8 +22,8 @@ export default function Form() {
                 <input
                     id="email"
                     type="email"
-                    value={email}
-                    onChange={(e) => setEmail(e.target.value)}
+                    value={formData.email}
+                    onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                     required
                 />
             </div>
@@ -27,8 +32,8 @@ export default function Form() {
                 <input
                     id="password"
                     type="password"
-                    value={password}
-                    onChange={(e) => setPassword(e.target.value)}
+                    value={formData.password}
+                    onChange={(e) => setFormData({ ...formData, password: e.target.value })}
                     required
                 />
             </div>
